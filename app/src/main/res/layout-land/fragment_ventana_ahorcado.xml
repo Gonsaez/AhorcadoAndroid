@@ -1,0 +1,350 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".60"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagenAhorcado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/ahorcado_0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".40"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/palabraConGuiones"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".40"
+            android:text="_ _ _ _ _ "
+            android:textSize="50sp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center_vertical|center_horizontal"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".20"
+            android:background="@android:color/background_dark">
+
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:onClick="botonPulsado"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/buttonB"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="B" />
+
+            <Button
+                android:id="@+id/buttonC"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/buttonD"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="D" />
+
+            <Button
+                android:id="@+id/buttonE"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="E" />
+
+            <Button
+                android:id="@+id/buttonF"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="F" />
+
+            <Button
+                android:id="@+id/buttonG"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="G" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height=".0dp"
+            android:layout_weight=".20"
+            android:background="@android:color/holo_green_dark">
+
+            <Button
+                android:id="@+id/buttonH"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="H" />
+
+            <Button
+                android:id="@+id/buttonI"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="I" />
+
+            <Button
+                android:id="@+id/buttonJ"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="J" />
+
+            <Button
+                android:id="@+id/buttonK"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="K" />
+
+            <Button
+                android:id="@+id/buttonL"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="L" />
+
+            <Button
+                android:id="@+id/buttonM"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="M" />
+
+            <Button
+                android:id="@+id/buttonN"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="N" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".20"
+            android:background="@android:color/holo_red_dark">
+
+            <Button
+                android:id="@+id/buttonENHE"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="Ñ" />
+
+            <Button
+                android:id="@+id/buttonO"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="O" />
+
+            <Button
+                android:id="@+id/buttonP"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="P" />
+
+            <Button
+                android:id="@+id/buttonQ"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="Q" />
+
+            <Button
+                android:id="@+id/buttonR"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="R" />
+
+            <Button
+                android:id="@+id/buttonS"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="S" />
+
+            <Button
+                android:id="@+id/buttonT"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="T" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".20"
+            android:background="@android:color/holo_orange_dark">
+
+            <Button
+                android:id="@+id/buttonU"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="U" />
+
+            <Button
+                android:id="@+id/buttonV"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="V" />
+
+            <Button
+                android:id="@+id/buttonW"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="W" />
+
+            <Button
+                android:id="@+id/buttonVacio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:drawable/checkbox_on_background"
+                android:fontFamily="casual"
+                android:onClick="botonReset" />
+
+            <Button
+                android:id="@+id/buttonX"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="X" />
+
+            <Button
+                android:id="@+id/buttonY"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="Y" />
+
+            <Button
+                android:id="@+id/buttonZ"
+                android:layout_width="0dp"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="botonPulsado"
+                android:text="Z" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
