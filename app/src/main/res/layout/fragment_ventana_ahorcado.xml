@@ -10,7 +10,7 @@
         android:layout_height="0dp"
         android:text="_ _ _ _ _ "
         android:layout_weight="15"
-        android:textSize="62sp"
+        android:textSize="25sp"
         android:id="@+id/palabraConGuiones"
         android:layout_gravity="center_horizontal|top"
         android:gravity="center_vertical|center_horizontal"
