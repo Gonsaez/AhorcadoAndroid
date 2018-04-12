@@ -100,6 +100,11 @@ public class MainActivity extends AppCompatActivity {
         //chequeo si se ha terminado la partida porque ha acertado todas las letras
         if (!palabraConGuiones.contains("_")) {
             imagenAhorcado.setImageResource(R.drawable.acertastetodo);
+            this.findViewById(R.id.lin1).setVisibility(View.INVISIBLE);
+            this.findViewById(R.id.lin2).setVisibility(View.INVISIBLE);
+            this.findViewById(R.id.lin3).setVisibility(View.INVISIBLE);
+            this.findViewById(R.id.lin4).setVisibility(View.INVISIBLE);
+            this.findViewById(R.id.botonR).setVisibility(View.VISIBLE);
         }
         textoGuiones.setText(palabraConGuiones);
 
@@ -129,6 +134,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     default:
                         imagenAhorcado.setImageResource(R.drawable.ahorcado_fin);
+                        this.findViewById(R.id.lin1).setVisibility(View.INVISIBLE);
+                        this.findViewById(R.id.lin2).setVisibility(View.INVISIBLE);
+                        this.findViewById(R.id.lin3).setVisibility(View.INVISIBLE);
+                        this.findViewById(R.id.lin4).setVisibility(View.INVISIBLE);
+                        this.findViewById(R.id.lin5).setVisibility(View.INVISIBLE);
+                        this.findViewById(R.id.botonR).setVisibility(View.VISIBLE);
                         break;
                 }
                 if(numeroFallos == 6){
