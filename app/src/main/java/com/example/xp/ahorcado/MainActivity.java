@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
             this.findViewById(R.id.lin2).setVisibility(View.INVISIBLE);
             this.findViewById(R.id.lin3).setVisibility(View.INVISIBLE);
             this.findViewById(R.id.lin4).setVisibility(View.INVISIBLE);
+            this.findViewById(R.id.lin5).setVisibility(View.INVISIBLE);
             this.findViewById(R.id.botonR).setVisibility(View.VISIBLE);
         }
         textoGuiones.setText(palabraConGuiones);
@@ -141,27 +142,6 @@ public class MainActivity extends AppCompatActivity {
                         this.findViewById(R.id.lin5).setVisibility(View.INVISIBLE);
                         this.findViewById(R.id.botonR).setVisibility(View.VISIBLE);
                         break;
-                }
-                if(numeroFallos == 6){
-                    mHandler.postDelayed(new Runnable() {
-                        public void run() {
-                            ImageView imagenAhorcado = ((ImageView) findViewById(R.id.imagenAhorcado));
-                            imagenAhorcado.setImageResource(R.drawable.pikachu);
-                        }
-                        public void botonfuera(View vista){
-                            Button boton = (Button) findViewById(vista.getId());
-                            boton.setVisibility(View.INVISIBLE);
-                        }
-                    }, 200);
-                    mHandler.postDelayed(new Runnable() {
-                        public void run() {
-                            ImageView imagenAhorcado = ((ImageView) findViewById(R.id.imagenAhorcado));
-                            imagenAhorcado.setImageResource(R.drawable.pikachu);
-                            Intent intent = getIntent();
-                            finish();
-                            startActivity(intent);
-                        }
-                    }, 2500);
                 }
             }
         }
