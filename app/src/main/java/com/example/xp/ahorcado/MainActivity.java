@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                         imagenAhorcado.setImageResource(R.drawable.ahorcado_5);
                         break;
                     default:
-                        imagenAhorcado.setImageResource(R.drawable.ahorcado_fin);
+                        imagenAhorcado.setImageResource(R.drawable.pikachu);
                         this.findViewById(R.id.lin1).setVisibility(View.INVISIBLE);
                         this.findViewById(R.id.lin2).setVisibility(View.INVISIBLE);
                         this.findViewById(R.id.lin3).setVisibility(View.INVISIBLE);
